@@ -12,23 +12,22 @@
         @media (max-width: 150px) {
             :root {
             --wide-text-size: 180px;
+            --narrow-text-size: 120px
             }
         }
             
         .narrow-text {
-            --narrow-text-size: 120px;
-            font-size: var(--narrow-text-size);
+            width: var(--narrow-text-size);
+            border-style: dashed;
+            padding: var(--text-padding);
         }
 
         .wide-text {
-            --wide-text-size: 200px;
-            font-size: var(--wide-text-size);
-        }
-
-        .text-padding {
-            --text-padding: 10px;
+            width: var(--wide-text-size);
+            border-style: dashed;
             padding: var(--text-padding);
         }
+
     </style>
 </head>
 
